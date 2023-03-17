@@ -1,6 +1,6 @@
-# Why lit is 🔥
+# Project Fugu 🐡
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d77f2b2a-a3cb-4d4a-9c63-a6f6114a1c83/deploy-status)](https://app.netlify.com/sites/why-lit-is-lit/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7502f118-b3eb-4187-b3a4-857028ed0525/deploy-status)](https://app.netlify.com/sites/project-fugu-presentation/deploys)
 
 A presentation about project Fugu
 Published to [netlify](https://why-lit-is-lit.netlify.app/)
