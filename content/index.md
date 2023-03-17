@@ -4,27 +4,21 @@
 
 --
 
-> Question 1
+> Who has experience with PWAs?
 
 --
 
-> Question 2
+> Who has experience with creating cross platform applications?
 
 <div>
 
-> sub questio 2
+> Cordova, Electron, React Native, Capacitor?
 
 </div><!-- .element: class="fragment fade-in" -->
 
 --
 
-<!-- .slide: data-theme="orange" -->
-
-> Question 3
-
---
-
-## 🤔 Smart remark!
+## 🤔 What if you could 'extend' the PWA _beyond_ the web platform?
 
 ---
 
@@ -60,7 +54,7 @@ Google Developer Expert
 
 --
 
-## Use the platform
+## Extend the platform
 
 --
 
@@ -71,6 +65,10 @@ Google Developer Expert
 ## Project Fugu
 
 <!-- .slide: data-theme="blue" -->
+
+--
+
+![Adding APIs](/assets/adding-apis.webp)
 
 ---
 
