@@ -43,19 +43,43 @@ Google Developer Expert
 
 ---
 
+## Cross platform development
+
+<!-- .slide: data-theme="blue" -->
+--
+
+- Electron<!-- .element: class="fragment fade-in-then-semi-out" -->
+- Capacitor<!-- .element: class="fragment fade-in-then-semi-out" -->
+- React Native<!-- .element: class="fragment fade-in-then-semi-out" -->
+- Phonegap / Cordova<!-- .element: class="fragment fade-in-then-semi-out" -->
+- ...<!-- .element: class="fragment fade-in" -->
+
+--
+
+![multi-target-cross-platform-development](/assets/multi-target-cross-platform-development.webp)
+
+--
+
 ## Use the platform
 
 --
 
-<!-- .slide: data-theme="blue" -->
+![PWA](/assets/PWA.webp)
 
-## Wrap up
+---
+
+## Project Fugu
+
+<!-- .slide: data-theme="blue" -->
 
 ---
 
 ### Some handy links
 
 <!-- .slide: data-theme="rouge" -->
+
+<span>💡 [lit.dev](https://lit.dev/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
+<span>🐡 [How Fugu is my browser](https://howfuguismybrowser.dev/) </span> <br /><!-- .element: class="fragment fade-in" -->
 
 ---
 
