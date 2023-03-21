@@ -72,11 +72,15 @@ Google Developer Expert
 
 --
 
-> The (Chromium) team chose the name because they knew that if they violated the core tenets of the web, the entire project could backfire.
+> Microsoft, Samsung, Intel, Electron, Google. That's the big names.
 
+<p> <!-- .element: style="display: flex; align-items: center; gap:1vw; justify-content:center;" -->
+  <img src="/assets/thomas-steiner.webp" alt="Thomas Steiner" class="circle" style="max-height: 10vh">
+  <span>Thomas Steiner &bull; Google</span>
+</p>
 --
 
-> Microsoft, Samsung, Intel, Electron, Google. That’s the big names.
+> The (Chromium) team chose the name because they knew that if they violated the core tenets of the web, the entire project could backfire.
 
 --
 
@@ -179,6 +183,8 @@ try {
 
 ### File System Access
 
+<div>
+
 ```javascript
 let fileHandle;
 butOpenFile.addEventListener('click', async () => {
@@ -191,6 +197,10 @@ butOpenFile.addEventListener('click', async () => {
 
 read<!-- .element: class="filename" -->
 
+</div>
+
+<div>
+
 ```javascript
 async function writeFile(fileHandle, contents) {
   const writable = await fileHandle.createWritable();
@@ -200,6 +210,10 @@ async function writeFile(fileHandle, contents) {
 ```
 
 write<!-- .element: class="filename" -->
+
+</div><!-- .element: class="fragment fade-in" -->
+
+<span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [File System Access API by Dave Bitter](https://techhub.iodigital.com/articles/the-file-system-access-api) </span><!-- .element: class="fragment fade-in" -->
 
 --
 
@@ -245,6 +259,7 @@ if (supported) {
 <!-- .slide: data-theme="rouge" -->
 
 <span>💡 [Fugu-tracker](https://fugu-tracker.web.app/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
+<span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [tech_hub by iO](https://techhub.iodigital.com/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
 <span>🐡 [How Fugu is my browser](https://howfuguismybrowser.dev/) </span> <br /><!-- .element: class="fragment fade-in" -->
 
 ---
