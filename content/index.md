@@ -76,6 +76,10 @@ Google Developer Expert
 
 --
 
+> Microsoft, Samsung, Intel, Electron, Google. That’s the big names.
+
+--
+
 - 🤝 Trust
 - 🕵️ Privacy <!-- .element: class="fragment fade-in" -->
 - 🔒 Security <!-- .element: class="fragment fade-in" -->
