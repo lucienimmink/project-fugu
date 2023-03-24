@@ -4,10 +4,6 @@
 
 --
 
-> Who has experience with PWAs?
-
---
-
 > Who has experience with creating cross platform applications?
 
 <div>
@@ -18,7 +14,11 @@
 
 --
 
-## 🤔 What if you could just use the web platform?
+> Who has experience with PWAs?
+
+--
+
+## 🤔 What if you could use the web platform for applications?
 
 ---
 
