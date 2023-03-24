@@ -112,6 +112,8 @@ Google Developer Expert
 
 <iframe allow="clipboard-read; clipboard-write" style="height: 30vh; width: 100%; border: 0;" title="async-clipboard-text on Glitch" src="https://async-clipboard-text.glitch.me/"></iframe>
 
+<span>💡[Unblocking clipboard access](https://web.dev/async-clipboard/)</span><!-- .element: class="fragment fade-in" -->
+
 --
 
 ### Badging
@@ -119,17 +121,15 @@ Google Developer Expert
 ```javascript
 // Set the badge
 const unreadCount = 24;
-navigator.setAppBadge(unreadCount).catch((error) => {
-  //Do something with the error.
-});
+navigator.setAppBadge(unreadCount).catch((error) => { /* ... */ });
 
 // Clear the badge
-navigator.clearAppBadge().catch((error) => {
-  // Do something with the error.
-});
+navigator.clearAppBadge().catch((error) => { /* ... */ });
 ```
 
 ![badge](/assets/badge.webp)
+
+<span>🦕[Badging API](https://developer.mozilla.org/en-US/docs/web/api/badging_api)</span><!-- .element: class="fragment fade-in" -->
 
 --
 
@@ -153,12 +153,12 @@ if ('OTPCredential' in window) {
       signal: ac.signal
     }).then(otp => {
       input.value = otp.code;
-    }).catch(err => {
-      console.log(err);
-    });
+    }).catch(err => { /* ... */ });
   });
 }
 ```
+
+<span>📱[Verifying phone numbers with the WebOTP API](https://developer.chrome.com/articles/web-otp/)</span><!-- .element: class="fragment fade-in" -->
 
 --
 
@@ -178,6 +178,8 @@ try {
   console.error(err.name, err.message);
 }
 ```
+
+<span>🔠[Advanced typography with local fonts](https://developer.chrome.com/articles/local-fonts/)</span><!-- .element: class="fragment fade-in" -->
 
 --
 
@@ -228,11 +230,11 @@ if (supported) {
   try {
     const contacts = await navigator.contacts.select(props, opts);
     console.log(contacts);
-  } catch (ex) {
-    // Handle any errors here.
-  }
+  } catch (ex) { /* ... */ }
 }
 ```
+
+<span>📖[A contact picker for the web](https://developer.chrome.com/articles/contact-picker/)</span><!-- .element: class="fragment fade-in" -->
 
 --
 
