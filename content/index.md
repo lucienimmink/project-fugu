@@ -18,7 +18,7 @@
 
 --
 
-## 🤔 What if you could use the web platform for applications?
+## 🤔 What if you could just use the web platform for applications?
 
 ---
 
@@ -33,7 +33,8 @@
 Software Architect &</br>
 Developer Advocate @ _iO_</br>
 </br>
-Google Developer Expert
+Google Developer Expert <br>
+web capabilities
 
 ---
 
@@ -47,6 +48,7 @@ Google Developer Expert
 - React Native<!-- .element: class="fragment fade-in-then-semi-out" -->
 - Phonegap / Cordova<!-- .element: class="fragment fade-in-then-semi-out" -->
 - ...<!-- .element: class="fragment fade-in" -->
+- web?<!-- .element: class="fragment fade-in" -->
 
 --
 
@@ -256,13 +258,27 @@ if (supported) {
 
 ---
 
-### Some handy links
+## Wrapping things up
+
+--
+
+### Project Fugu
+
+- Using just web technology<!-- .element: class="fragment fade-in" -->
+- Extending the browser capabilites<!-- .element: class="fragment fade-in" -->
+- Following core web tenets<!-- .element: class="fragment fade-in" -->
+- Running on all platforms<!-- .element: class="fragment fade-in" -->
+- ... if supported 🍏<!-- .element: class="fragment fade-in" -->
+
+---
+
+### Links to get started
 
 <!-- .slide: data-theme="rouge" -->
 
-<span>💡 [Fugu-tracker](https://fugu-tracker.web.app/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
-<span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [tech_hub by iO](https://techhub.iodigital.com/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
-<span>🐡 [How Fugu is my browser](https://howfuguismybrowser.dev/) </span> <br /><!-- .element: class="fragment fade-in" -->
+<span>💡 [fugu-tracker.web.app](https://fugu-tracker.web.app/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
+<span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [techhub.iodigital.com](https://techhub.iodigital.com/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
+<span>🐡 [howfuguismybrowser.dev](https://howfuguismybrowser.dev/) </span> <br /><!-- .element: class="fragment fade-in" -->
 
 ---
 
