@@ -1,6 +1,6 @@
 {
   "name": "reveal.js",
-  "version": "4.3.1",
+  "version": "4.5.0",
   "description": "The HTML Presentation Framework",
   "homepage": "https://revealjs.com",
   "subdomain": "revealjs",
@@ -30,36 +30,40 @@
     "presentation"
   ],
   "devDependencies": {
-    "@babel/core": "^7.18.5",
-    "@babel/eslint-parser": "^7.18.2",
-    "@babel/preset-env": "^7.18.2",
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
     "@rollup/plugin-babel": "^6.0.0",
-    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-commonjs": "^25.0.0",
     "@rollup/plugin-node-resolve": "^15.0.0",
     "api-viewer-element": "^1.0.0-pre.3",
     "babel-plugin-transform-html-import-to-string": "2.0.0",
     "colors": "^1.4.0",
-    "core-js": "^3.23.1",
-    "fitty": "^2.3.6",
-    "glob": "^9.0.0",
+    "core-js": "^3.12.1",
+    "fitty": "^2.3.0",
+    "glob": "^10.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
-    "gulp-clean-css": "^4.3.0",
+    "gulp-clean-css": "^4.2.0",
     "gulp-connect": "^5.7.0",
     "gulp-eslint": "^6.0.0",
     "gulp-header": "^2.0.9",
     "gulp-tap": "^2.0.0",
     "gulp-zip": "^5.0.0",
-    "highlight.js": "^11.5.1",
-    "marked": "^4.0.17",
-    "node-qunit-puppeteer": "^2.1.0",
-    "qunit": "^2.19.1",
-    "rollup": "^2.75.7",
+    "highlight.js": "^11.7.0",
+    "marked": "^9.0.0",
+    "node-qunit-puppeteer": "^2.1.2",
+    "qunit": "^2.19.3",
+    "rollup": "^2.77.4-1",
     "rollup-plugin-terser": "^7.0.2",
-    "sass": "^1.52.3",
-    "yargs": "^17.5.1"
+    "sass": "^1.39.2",
+    "yargs": "^17.0.0"
   },
-  "browserslist": "> 0.5%, not dead",
+  "overrides": {
+    "chokidar": "3.5.3",
+    "glob-parent": "6.0.2"
+  },
+  "browserslist": "> 2%, not dead",
   "eslintConfig": {
     "env": {
       "browser": true,
@@ -99,7 +103,7 @@
     }
   },
   "volta": {
-    "node": "20.0.0",
-    "npm": "9.6.5"
+    "node": "20.8.1",
+    "npm": "10.2.1"
   }
 }

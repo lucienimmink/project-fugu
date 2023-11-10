@@ -1,6 +1,6 @@
 # Project fugu 🐡
 
-<!-- .slide: data-theme="orange" -->
+<!-- .slide: data-theme="blue" -->
 
 --
 
@@ -22,7 +22,7 @@
 
 ---
 
-<!-- .slide: data-theme="blue" -->
+<!-- .slide: data-theme="calm-green" -->
 
 ## Lucien Immink, B.Eng.
 
@@ -40,7 +40,7 @@ web capabilities
 
 ## Cross platform development
 
-<!-- .slide: data-theme="blue" -->
+<!-- .slide: data-theme="calm-pink" -->
 --
 
 - Electron<!-- .element: class="fragment fade-in-then-semi-out" -->
@@ -52,7 +52,7 @@ web capabilities
 
 --
 
-![multi-target-cross-platform-development](/assets/multi-target-cross-platform-development.webp)
+![multi-target-cross-platform-development](/assets/multi-target-cross-platform-development.webp)<!-- .element: class="image" -->
 
 --
 
@@ -70,7 +70,7 @@ web capabilities
 
 ## Project Fugu
 
-<!-- .slide: data-theme="blue" -->
+<!-- .slide: data-theme="calm-blue" -->
 
 --
 
@@ -96,17 +96,17 @@ web capabilities
 
 --
 
-![API abstraction](/assets/api-call-abstraction.webp)
+![API abstraction](/assets/api-call-abstraction.webp)<!-- .element: class="image" -->
 
 --
 
-![Adding APIs](/assets/adding-apis.webp)
+![Adding APIs](/assets/adding-apis.webp)<!-- .element: class="image" -->
 
 ---
 
 ## Some released features
 
-<!-- .slide: data-theme="blue" -->
+<!-- .slide: data-theme="calm-beige" -->
 
 --
 
@@ -129,7 +129,7 @@ navigator.setAppBadge(unreadCount).catch((error) => { /* ... */ });
 navigator.clearAppBadge().catch((error) => { /* ... */ });
 ```
 
-![badge](/assets/badge.webp)
+![badge](/assets/badge.webp)<!-- .element: class="image" -->
 
 <span>🦕[Badging API](https://developer.mozilla.org/en-US/docs/web/api/badging_api)</span><!-- .element: class="fragment fade-in" -->
 
@@ -217,7 +217,7 @@ write<!-- .element: class="filename" -->
 
 </div><!-- .element: class="fragment fade-in" -->
 
-<span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [File System Access API by Dave Bitter](https://techhub.iodigital.com/articles/the-file-system-access-api) </span><!-- .element: class="fragment fade-in" -->
+<span> ![iO logo](/assets/io-black.svg)<!-- .element: class="icon icon-inline" --> [File System Access API by Dave Bitter](https://techhub.iodigital.com/articles/the-file-system-access-api) </span><!-- .element: class="fragment fade-in" -->
 
 --
 
@@ -274,7 +274,7 @@ if (supported) {
 
 ### Links to get started
 
-<!-- .slide: data-theme="rouge" -->
+<!-- .slide: data-theme="blue" -->
 
 <span>💡 [fugu-tracker.web.app](https://fugu-tracker.web.app/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
 <span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [techhub.iodigital.com](https://techhub.iodigital.com/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
