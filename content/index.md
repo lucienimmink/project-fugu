@@ -2,6 +2,8 @@
 
 <!-- .slide: data-theme="blue" -->
 
+<span>📑 [project-fugu-presentation.netlify.app](https://project-fugu-presentation.netlify.app/) </span> <br><!-- .element: class="fragment fade-in" -->
+
 --
 
 > Who has experience with creating cross platform applications?
@@ -107,6 +109,66 @@ web capabilities
 ## Some released features
 
 <!-- .slide: data-theme="calm-beige" -->
+
+--
+
+### USB
+
+```javascript
+let device;
+
+navigator.usb.requestDevice({ filters: [{ vendorId: 0x2341 }] })
+.then(selectedDevice => {
+    device = selectedDevice;
+    return device.open(); // Begin a session.
+  })
+.then(() => device.selectConfiguration(1)) // Select configuration #1 for the device.
+.then(() => device.claimInterface(2)) // Request exclusive control over interface #2.
+.then(() => device.controlTransferOut({
+    requestType: 'class',
+    recipient: 'interface',
+    request: 0x22,
+    value: 0x01,
+    index: 0x02})) // Ready to receive data
+.then(() => device.transferIn(5, 64)) // Waiting for 64 bytes of data from endpoint #5.
+.then(result => {
+  const decoder = new TextDecoder();
+  console.log('Received: ' + decoder.decode(result.data));
+})
+.catch(error => { console.error(error); });
+```
+<p>
+  <img src="/assets/icons/javascript.svg" class="icon icon-inline" alt=""> arduino-usb-board.js
+</p><!-- .element: class="filename" -->
+
+<span><img src="/assets/icons/usb.svg" class="icon icon-inline" alt="" style="width: 1em;">[Web USB](https://developer.chrome.com/articles/usb/)</span><!-- .element: class="fragment fade-in" -->
+
+--
+
+### Bluetooth
+
+```javascript
+navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }] })
+.then(device => device.gatt.connect())
+.then(server => {
+  // Getting Battery Service…
+  return server.getPrimaryService('battery_service');
+})
+.then(service => {
+  // Getting Battery Level Characteristic…
+  return service.getCharacteristic('battery_level');
+})
+.then(characteristic => {
+  // Reading Battery Level…
+  return characteristic.readValue();
+})
+.then(value => {
+  console.log(`Battery percentage is ${value.getUint8(0)}`);
+})
+.catch(error => { console.error(error); });
+```
+
+<span><img src="/assets/icons/bluetooth.svg" class="icon icon-inline" alt="" style="width: 1em;">[Web Bluetooth](https://developer.chrome.com/articles/bluetooth/)</span><!-- .element: class="fragment fade-in" -->
 
 --
 
@@ -248,12 +310,22 @@ if (supported) {
 
 --
 
-- More filetypes for Async clipboard (audio / video)
-- Changing system settings<!-- .element: class="fragment fade-in" -->
-- Geofencing<!-- .element: class="fragment fade-in" -->
+- Ambient Light Sensor API<!-- .element: class="fragment fade-in" -->
+- Borderless mode<!-- .element: class="fragment fade-in" -->
+- App store payment support for TWAs<!-- .element: class="fragment fade-in" -->
 - Splash screen API<!-- .element: class="fragment fade-in" -->
-- Remote desktop control<!-- .element: class="fragment fade-in" -->
+- Gamepad Button and Axis events<!-- .element: class="fragment fade-in" -->
+- ...<!-- .element: class="fragment fade-in" -->
+
+--
+
+### Under consideration
+
+- Access to common libraries<!-- .element: class="fragment fade-in" -->
+- App Menu API for installed PWAs<!-- .element: class="fragment fade-in" -->
+- Block and/or Detect Screenshots<!-- .element: class="fragment fade-in" -->
 - Call dialer/answering/control APIs<!-- .element: class="fragment fade-in" -->
+- Face Detection API<!-- .element: class="fragment fade-in" -->
 - ...<!-- .element: class="fragment fade-in" -->
 
 ---
@@ -279,6 +351,7 @@ if (supported) {
 <span>💡 [fugu-tracker.web.app](https://fugu-tracker.web.app/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
 <span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [techhub.iodigital.com](https://techhub.iodigital.com/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
 <span>🐡 [howfuguismybrowser.dev](https://howfuguismybrowser.dev/) </span> <br /><!-- .element: class="fragment fade-in" -->
+<span>📑 [project-fugu-presentation.netlify.app](https://project-fugu-presentation.netlify.app/) </span> <br /><!-- .element: class="fragment fade-in" -->
 
 ---
 
