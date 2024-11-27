@@ -1,12 +1,16 @@
 {
   "name": "project-fugu",
   "version": "1.0.0",
-  "description": "Project fugu presentation",
+  "description": "project-fugu",
   "main": "index.js",
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "analyze": "cd src && cem analyze --litelement",
+    "vite:dev": "vite",
+    "vite:build": "npm run analyze && vite build",
+    "generate": "skeleton-component-generator --cem=./src/custom-elements.json --gen=./dist/generated-components"
   },
   "repository": {
     "type": "git",
@@ -21,14 +25,17 @@
     "node": ">=18.0.0"
   },
   "devDependencies": {
+    "@addasoft/skeleton-component-generator": "^1.0.1",
     "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/preset-env": "^7.23.2",
+    "@custom-elements-manifest/analyzer": "^0.10.3",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.0",
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "babel-plugin-transform-html-import-to-string": "2.0.0",
+    "clippy-web-component": "^0.0.4",
     "colors": "^1.4.0",
     "core-js": "^3.33.1",
     "fitty": "^2.3.7",
@@ -49,6 +56,7 @@
     "qunit": "^2.20.0",
     "rollup": "^4.1.5",
     "sass": "^1.69.5",
+    "vite": "^5.3.4",
     "yargs": "^17.7.2"
   },
   "overrides": {
