@@ -1,6 +1,6 @@
-# api-first-ui-components
+# Project fugu
 
-> Unlocking Seamless Collaboration: Design-First APIs for UI Components
+> A presentation about Project Fugu
 
 ## Install
 
@@ -10,16 +10,14 @@ Follow these steps to get the presentation up and running on your computer
 
 ### Local
 
-- `git clone git@github.com:lucienimmink/api-first-ui-components.git`
+- `git clone git@github.com:lucienimmink/project-fugu.git`
 - `npm install`
 - `npm run build`
 - `npm run start`
 
 ### Remote
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3d695c81-04b2-4503-aa68-c9e5b4584316/deploy-status)](https://app.netlify.com/sites/api-first-ui-components/deploys)
-
-Visit [api-first-ui-components.netlify.app](https://api-first-ui-components.netlify.app/) and press `f11` for full-screen mode.
+Visit [project-fugu-presentation.netlify.app](https://project-fugu-presentation.netlify.app) and press `f11` for full-screen mode.
 
 ## Edit
 
