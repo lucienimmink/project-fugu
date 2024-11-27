@@ -1,0 +1,257 @@
+/**
+ * League theme for reveal.js.
+ *
+ * This was the default theme pre-3.0.0.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+@font-face {
+	font-family: "barlow";
+	src: url("/assets/fonts/barlow-regular-webfont.woff2") format("woff2");
+}
+@font-face {
+	font-family: "barlow-bold";
+	src: url("/assets/fonts/barlow-bold-webfont.woff2") format("woff2");
+}
+
+// Override theme settings (see ../template/settings.scss)
+
+$mainFont: barlow, ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+$headingFont: barlow-bold, ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+$codeFont: ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+
+$headingTextTransform: 'initial';
+
+$mainColorMuted: rgba(255, 255, 255, 0.5);
+// $headingTextShadow: 0px 0px 6px rgba(0,0,0,0.2);
+// $heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+$heading1TextShadow: none;
+$heading1Size: 2.53em;
+$heading2Size: 2em;
+
+// Background generator
+@mixin bodyBackground() {
+	--trsit-black: black;
+	--trsit-yellow: #FFE000;
+	
+	html[data-theme="yellow"] & {
+		--r-background-color: var(--trsit-yellow);
+		--r-link-color: var(--trsit-black);
+		--r-main-color: var(--trsit-black);
+		--r-heading-color: var(--trsit-black);
+	}
+	html[data-theme="black"] & {
+		--r-link-color: var(--trsit-yellow);
+		--r-main-color: var(--trsit-yellow);
+		--r-heading-color: var(--trsit-yellow);
+		--r-background-color: var(--trsit-black);
+	}
+	html[data-theme="white"] & {
+		--r-link-color: var(--trsit-black);
+		--r-main-color: var(--trsit-black);
+		--r-heading-color: var(--trsit-black);
+		--r-background-color: white;
+	}
+	html & {
+		background-color: var(--r-background-color);
+	}
+}
+
+// Change text colors against light slide backgrounds
+@include light-bg-text-color(#222);
+ 
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+.reveal {
+	--r-muted-color: rgb(196,196,196);
+	--r-selection-color: var(--r-background-color);
+	--r-selection-background-color: var(--r-heading-color);
+	h1 {
+		font-weight: bold;
+	}
+	blockquote {
+		font-style: normal;
+		font-family: $mainFont;
+		box-shadow: var(--r-heading1-text-shadow);
+		background-color: rgba(255, 255, 255, 0.15);
+
+		> :before, > :after {
+			content: '"';
+			font-size: 5rem;
+			position: absolute;			
+			font-family: "felix titling", "perpetua-titling", sans-serif;
+			top: 0px;
+		}
+
+		> :before {
+			left: 10px;
+			
+		}
+		> :after {
+			right: 10px;
+		}
+
+		P {
+			padding-inline: 1rem;
+		}
+	}
+	.no-background {
+		background-color: transparent;
+		box-shadow: none;
+	}
+	pre code {
+		overflow-x : hidden;
+	}
+	pre code:first-child {
+		box-shadow: var(--r-heading1-text-shadow);
+	}
+	.code-bg {
+		padding: 0.1em 0.3em;
+		background-color: rgba(255, 255, 255, 0.15);
+	}
+	em,
+	blockquote em {
+		font-family: 'Reckless', sans-serif;
+	}
+	.icon {
+		width: 1.5em;
+		margin: 0;
+	}
+	.icon-inline {
+		margin-bottom: -5px;
+	}
+	.filename {
+		width: 90%;
+		margin: -0.7em 0 0 5%;
+		font-size: 0.75em;
+		padding: 0.25em 0;
+		background: var(--r-background-color);
+		box-shadow: var(--r-heading1-text-shadow);
+		color: white;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		.icon {
+			width: 1em;
+		}
+	}
+	a {
+		background-repeat: no-repeat;
+		background-position: 100% 100%;
+		background-size: 100% 3px;
+		background-image: linear-gradient(var(--r-link-color), var(--r-link-color));
+		color: var(--r-link-color);
+		text-decoration: none;
+		transition: background-size .35s cubic-bezier(.645,.045,.355,1);
+		&:hover {
+			color: var(--r-link-color);
+			background-size: 0 3px;
+		}
+	}
+	.circle {
+		border-radius: 50%;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+	}
+	.image {
+		border-radius: 5px;
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+	}
+	video {
+		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15);
+		border-radius: 5px;
+	}
+	.w-80 {
+		width: 80%;
+	}
+	.w-90 {
+		width: 90%;
+	}
+	.h-90 {
+		max-height: calc(var(--slide-height) - 2*var(--r-block-margin));
+	}
+	.h-80 {
+		max-height: calc(var(--slide-height) - 4*var(--r-block-margin));
+	}
+	.small {
+		font-size: calc(40px * 0.7);
+	}
+	.browser {
+		width: 100%;
+		height: 550px;
+		transform: translate (-600px, 0) scale(0.7);
+		border: none;
+	}
+	.muted {
+		opacity: 0.75;
+		font-size: calc(40px * 0.7);
+	}
+	.fragment.muted.fade-in-then-semi-out.current-fragment {
+		opacity: 0.75;
+	}
+}
+
+// scrollbars on windows -----------------------
+.reveal .code-wrapper code {
+	&::-webkit-scrollbar {
+		width: 5px;
+		height: 5px;
+		background-color: var(--r-background-color);
+		border-radius: 3px;
+		box-shadow: none;
+		border-width: 0;
+  	}
+	&::-webkit-scrollbar-corner {
+		background-color: var(--r-background-color);
+	}
+	&::-webkit-scrollbar-button {
+		display: none;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: var(--r-muted-color);
+	}
+}
+// ---------------------------------------------
+
+.reveal api-viewer {
+	color: black;
+    background: white;
+    margin: 0 auto;
+	min-height: 500px;
+	transform: scale(0.9);
+}
+
+.background-emoji {
+	inset: 0;
+	position: absolute;
+
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+
+	line-height: 0.96;
+
+	font-size: 100vh;
+	opacity: 0.15;
+
+	filter: blur(2px);
+
+	color: var(--r-main-color, yellow);
+}
+
+clippy-element {
+	position: absolute;
+	opacity: 0;
+	left: calc(100% - 276px - 50px);
+	top: calc(100% - 368px - 50px);
+	transform: scale(0);
+	transition: all 0.5s ease-in-out;
+}

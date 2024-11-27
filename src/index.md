@@ -1,11 +1,11 @@
+<!-- .slide: data-theme="black" data-background-emoji="✨"-->
 # Project fugu 🐡
-
-<!-- .slide: data-theme="blue" -->
 
 <span>📑 [project-fugu-presentation.netlify.app](https://project-fugu-presentation.netlify.app/) </span> <br><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🙋"-->
 > Who has experience with creating cross platform applications?
 
 <div>
@@ -14,37 +14,38 @@
 
 </div><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="📱"-->
 > Who has experience with PWAs?
 
---
+---
 
-## 🤔 What if you could just use the web platform for applications?
+<!-- .slide: data-theme="black" data-background-emoji="💭"-->
+> What if you could just use the web platform for applications?
 
 ---
 
-<!-- .slide: data-theme="calm-green" -->
-
-## Lucien Immink, B.Eng.
-
---
-
-![Lucien Immink](/assets/lucien-immink.webp)<!-- .element: class="circle" style="max-height: 20vh" -->
-
-Software Architect &</br>
-Developer Advocate @ _iO_</br>
-</br>
-Google Developer Expert <br>
-web capabilities
+<!-- .slide: data-theme="yellow" data-background-emoji="📎"-->
+## Lucien Immink
 
 ---
 
+<!-- .slide: data-theme="yellow" data-background-emoji="📎"-->
+![Lucien Immink](/assets/lucien-2024.jpg)<!-- .element: class="circle" style="max-height: 20vh" -->
+
+### Principal Consultant @ Team Rockstars IT
+
+#### Google Developer Expert
+
+---
+
+<!-- .slide: data-theme="black" data-background-emoji="🧑‍💻"-->
 ## Cross platform development
 
-<!-- .slide: data-theme="calm-pink" -->
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🧑‍💻"-->
 - Electron<!-- .element: class="fragment fade-in-then-semi-out" -->
 - Capacitor<!-- .element: class="fragment fade-in-then-semi-out" -->
 - React Native<!-- .element: class="fragment fade-in-then-semi-out" -->
@@ -52,66 +53,77 @@ web capabilities
 - ...<!-- .element: class="fragment fade-in" -->
 - web?<!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🧑‍💻"-->
 ![multi-target-cross-platform-development](/assets/multi-target-cross-platform-development.webp)<!-- .element: class="image" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="📱"-->
 ## PWA
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="📱"-->
 ![PWA](/assets/PWA.webp)
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="📱"-->
 > Progressive Web Apps bring offline and _app-like_ experiences to the web.
 
 ---
 
+<!-- .slide: data-theme="black" data-background-emoji="🐡"-->
 ## Project Fugu
 
-<!-- .slide: data-theme="calm-blue" -->
+---
 
---
+<!-- .slide: data-theme="black" data-background-emoji="💬"-->
+<br><br><br><br>
+<blockquote class="no-background"><p>Microsoft, Samsung, Intel, Electron, Google. That's the big names.</p></blockquote>
 
-> Microsoft, Samsung, Intel, Electron, Google. That's the big names.
-
+<br><br>
 <p> <!-- .element: style="display: flex; align-items: center; gap:1vw; justify-content:center;" -->
   <img src="/assets/thomas-steiner.webp" alt="Thomas Steiner" class="circle" style="max-height: 10vh">
   <span>Thomas Steiner &bull; Google</span>
 </p>
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="💥"-->
 > The (Chromium) team chose the name because they knew that if they violated the core tenets of the web, the entire project could backfire.
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🤝"-->
 - 🤝 Trust
 - 🕵️ Privacy <!-- .element: class="fragment fade-in" -->
 - 🔒 Security <!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="💬"-->
 > Project Fugu APIs act as an abstraction layer between native APIs and the web.
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🗨️"-->
 ![API abstraction](/assets/api-call-abstraction.webp)<!-- .element: class="image" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🪜"-->
 ![Adding APIs](/assets/adding-apis.webp)<!-- .element: class="image" -->
 
 ---
 
+<!-- .slide: data-theme="black" data-background-emoji="💯"-->
 ## Some released features
 
-<!-- .slide: data-theme="calm-beige" -->
+---
 
---
-
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### USB
 
 ```javascript
@@ -143,8 +155,9 @@ navigator.usb.requestDevice({ filters: [{ vendorId: 0x2341 }] })
 
 <span><img src="/assets/icons/usb.svg" class="icon icon-inline" alt="" style="width: 1em;">[Web USB](https://developer.chrome.com/articles/usb/)</span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### Bluetooth
 
 ```javascript
@@ -170,16 +183,18 @@ navigator.bluetooth.requestDevice({ filters: [{ services: ['battery_service'] }]
 
 <span><img src="/assets/icons/bluetooth.svg" class="icon icon-inline" alt="" style="width: 1em;">[Web Bluetooth](https://developer.chrome.com/articles/bluetooth/)</span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### Async clipboard
 
 <iframe allow="clipboard-read; clipboard-write" style="height: 30vh; width: 100%; border: 0;" title="async-clipboard-text on Glitch" src="https://async-clipboard-text.glitch.me/"></iframe>
 
 <span>💡[Unblocking clipboard access](https://web.dev/async-clipboard/)</span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### Badging
 
 ```javascript
@@ -195,8 +210,9 @@ navigator.clearAppBadge().catch((error) => { /* ... */ });
 
 <span>🦕[Badging API](https://developer.mozilla.org/en-US/docs/web/api/badging_api)</span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### WebOTP API
 
 ```html
@@ -224,8 +240,9 @@ if ('OTPCredential' in window) {
 
 <span>📱[Verifying phone numbers with the WebOTP API](https://developer.chrome.com/articles/web-otp/)</span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### Local Font Access
 
 ```javascript
@@ -245,8 +262,9 @@ try {
 
 <span>🔠[Advanced typography with local fonts](https://developer.chrome.com/articles/local-fonts/)</span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### File System Access
 
 <div>
@@ -281,8 +299,9 @@ write<!-- .element: class="filename" -->
 
 <span> ![iO logo](/assets/io-black.svg)<!-- .element: class="icon icon-inline" --> [File System Access API by Dave Bitter](https://techhub.iodigital.com/articles/the-file-system-access-api) </span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="👩‍💻"-->
 ### Contact Picker
 
 ```javascript
@@ -300,16 +319,19 @@ if (supported) {
 
 <span>📖[A contact picker for the web](https://developer.chrome.com/articles/contact-picker/)</span><!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🫙"-->
 ## ... And many more
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="📅"-->
 ## Some Upcoming features
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="📅"-->
 - Ambient Light Sensor API<!-- .element: class="fragment fade-in" -->
 - Borderless mode<!-- .element: class="fragment fade-in" -->
 - App store payment support for TWAs<!-- .element: class="fragment fade-in" -->
@@ -317,8 +339,9 @@ if (supported) {
 - Gamepad Button and Axis events<!-- .element: class="fragment fade-in" -->
 - ...<!-- .element: class="fragment fade-in" -->
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🥼"-->
 ### Under consideration
 
 - Access to common libraries<!-- .element: class="fragment fade-in" -->
@@ -330,10 +353,12 @@ if (supported) {
 
 ---
 
+<!-- .slide: data-theme="black" data-background-emoji="🎁"-->
 ## Wrapping things up
 
---
+---
 
+<!-- .slide: data-theme="black" data-background-emoji="🐡"-->
 ### Project Fugu
 
 - Using just web technology<!-- .element: class="fragment fade-in" -->
@@ -344,21 +369,20 @@ if (supported) {
 
 ---
 
+<!-- .slide: data-theme="black" data-background-emoji="📃"-->
 ### Links to get started
 
-<!-- .slide: data-theme="blue" -->
-
 <span>💡 [fugu-tracker.web.app](https://fugu-tracker.web.app/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
-<span> ![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [techhub.iodigital.com](https://techhub.iodigital.com/) </span> <br /><!-- .element: class="fragment fade-in-then-semi-out" -->
 <span>🐡 [howfuguismybrowser.dev](https://howfuguismybrowser.dev/) </span> <br /><!-- .element: class="fragment fade-in" -->
 <span>📑 [project-fugu-presentation.netlify.app](https://project-fugu-presentation.netlify.app/) </span> <br /><!-- .element: class="fragment fade-in" -->
 
 ---
 
+<!-- .slide: data-theme="black" data-background-emoji="🙏" -->
 ## Thank you
 
 Contact me:
 
-![iO logo](/assets/io.svg)<!-- .element: class="icon icon-inline" --> [iodigital.com](https://www.iodigital.com) <br />
-🏢 [linkedin.com/in/lucien-immink](https://www.linkedin.com/in/lucien-immink/) <br />
-🐘 [techhub.social/@lucienimmink](https://techhub.social/@lucienimmink) <br />
+🦋 [bsky](https://bsky.app/profile/arielext.org) <br >
+🏢 [Team Rockstars IT](https://www.teamrockstars.nl/) <br >
+✉️ [linkedin.com/in/lucien-immink](https://www.linkedin.com/in/lucien-immink/) <br >
