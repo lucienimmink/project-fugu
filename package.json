@@ -60,7 +60,7 @@
     "yargs": "^17.7.2"
   },
   "overrides": {
-    "chokidar": "4.0.2",
+    "chokidar": "4.0.3",
     "glob-parent": "6.0.2"
   },
   "browserslist": "> 2%, not dead",
