@@ -104,7 +104,7 @@
   },
   "homepage": "https://github.com/lucienimmink/project-fugu#readme",
   "volta": {
-    "node": "22.14.0",
+    "node": "22.15.0",
     "npm": "10.9.2"
   }
 }
